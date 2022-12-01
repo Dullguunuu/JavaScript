@@ -1,13 +1,26 @@
-let jil=2024 , a = jil%4, b=jil%100, c=jil%400;
+let jil=1504 , a = jil%4, b=jil%100, c=jil%400;
 
-if (a==0 && b!=0)
+if (a==0 && c==0)
 {
-    console.log("Өндөр жил мөн");
+    if (b==0)
+    console.log("Өндөр жил биш");
+
+    else
+    {
+        console.log("Өндөр жил мөн")
+    }
+    
 }
 
-else if (c==0)
+else if (a==0)
 {
-    console.log("Өндөр жил мөн");
+    if (b==0)
+    console.log("Өндөр жил биш");
+
+    else{
+        console.log("Өндөр жил мөн")
+    }
+    
 }
 
 else
