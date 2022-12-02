@@ -20,7 +20,7 @@ console.log(sum)
 // 2
 
 let x = 3, y = 7, z = 2, w = 4;
-var mul = 1;
+let mul = 1;
 
 if (x<5)
 mul = mul * x;
