@@ -1,6 +1,9 @@
-let factorialNumber = prompt("Та тоогоо оруулна уу");
+let number = prompt("Та тоогоо оруулна уу");
 let n = 1;
-while (n < factorialNumber) {
-    factorialNumber =
-        factorialNumber -= n;
+let factorial = 1;
+
+while (n <= number) {
+    factorial = factorial * n;
+    n++;
 }
+console.log(factorial);
