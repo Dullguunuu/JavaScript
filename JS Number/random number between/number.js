@@ -1,15 +1,17 @@
-let a = prompt ("Тоо оруулна уу");
-let b = prompt ("Тоо оруулна уу");
-let genNumber = 0;
+let aStr = prompt ("Тоо оруулна уу");
+let bStr = prompt ("Тоо оруулна уу");
+let a = Number(aStr);
+let b = Number(bStr);
+let random = 0;
+
 if (a>b)
 {
-    genNumber = Math.random() * (a-b) + a;
-    console.log(genNumber);
+    random = Math.random() * (a-b) + b;
+    console.log(random);
 }
-
 
 else
 {
-    genNumber = Math.random() * (b-a) + b;
-    console.log(genNumber);
+    random = Math.random() * (b-a) + a;
+    console.log(random);
 }
