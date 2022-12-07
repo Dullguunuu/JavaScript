@@ -7,17 +7,12 @@ let ii = 0;
 //1
 
 for (let i = 0; i < array.length; i++) {
-
-    let b = array[i];
     for (let j = i + 1; j < array.length; j++) {
-        if (b === array[j]) {
-            output.length++
+        if (array[i] === array[j]) {
+            output
+            break;
         }
     }
 }
 
 console.log(output)
-
-//index = 0
-
-//length = 1
