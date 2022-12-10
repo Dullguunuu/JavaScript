@@ -65,17 +65,16 @@ console.log(users[0])
 
 console.log("Олон ур чадвар эзэмшсэн хүн")
 
-let a = 0;
-let b = 0;
+let maxSkill = 0, skilledPerson =0 ;
 
-for (i = 0; i < users.length; i++) {
-    c = users[i].skills.length;
-    if (b < c) {
-        b = c;
-        c = users[i]
-        console.log(users[i].name)
+for (i = 0; i < users.length; i++){
+    if(users[i].skills.length > maxSkill)
+    {
+        maxSkill = users[i].skills.length;
+        skilledPerson = users[i].name
     }
 }
+console.log(skilledPerson)
 
 
 //  3
@@ -104,16 +103,9 @@ for (i = 0; i < users.length; i++) {
 
 //  5
 
-// console.log("Хамгийн их настай 3 хүмүүсийн мэдээлэл:")
-// for (i = 0; i < users.length; i++) {
-//     for (j = i + 1; j < users.length; j++) {
-//         if (users[i].age > users[j].age)
-//             let temp1 = users[i]
-//         users[i] = users[j]
-//         users[j] = temp1
-//         console.log(temp1)
-//     }
-// }
+console.log("Хамгийн их настай 3 хүмүүсийн мэдээлэл:")
+
+console.log(users.sort((a, b) => a.age - b.age).slice(users.length - 3));
 
 
 
