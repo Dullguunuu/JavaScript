@@ -67,9 +67,6 @@ console.log(students);
 
 //  4 
 
-// for (i = 0; i < students.length; i++) {
-//     if(students[i].age == )
-// }
 
 
 
