@@ -1,0 +1,34 @@
+.flex {
+    display: flex;
+}
+
+.right {
+    max-width: 50vw;
+}
+
+.left {
+    padding-top: 150px;
+    padding-left: 30px;
+}
+
+.styleBtn {
+    border: 1px blue solid;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+
+}
+
+#color1 {
+    background-color: pink;
+}
+
+
+#color2 {
+    background-color: rgb(111, 107, 107);
+}
+
+
+#color3 {
+    background-color: rgba(52, 57, 150, 0.765);
+}
