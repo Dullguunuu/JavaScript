@@ -11,12 +11,11 @@
     padding-left: 30px;
 }
 
-.styleBtn {
-    border: 1px blue solid;
+button {
+    border: 1px grey solid;
     border-radius: 50px;
-    width: 30px;
-    height: 30px;
-
+    padding: 20px;
+    margin: 10px;
 }
 
 #color1 {
@@ -30,5 +29,5 @@
 
 
 #color3 {
-    background-color: rgba(52, 57, 150, 0.765);
+    background-color: rgba(10, 15, 107, 0.765);
 }
