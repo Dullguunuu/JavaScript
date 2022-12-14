@@ -1,0 +1,47 @@
+* {
+    margin: auto;
+}
+
+body {
+    width: 30rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(13, 13, 149);
+}
+
+hr {
+    color: rgb(13, 13, 149);
+}
+
+input {
+    background-color: rgba(255, 166, 0, 0.336);
+    border: none;
+    height: 40px;
+    width: 80%;
+}
+
+button {
+    background-color: orange;
+    height: 40px;
+    border: 2px solid orange;
+    color: white;
+}
+
+#mur2_style {
+    display: flex;
+    margin: 20px 0;
+}
+
+#main {
+    margin-top: 30px;
+    ыыыы
+}
+
+#jagsaaltList {
+    display: flex;
+}
