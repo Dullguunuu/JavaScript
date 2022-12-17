@@ -1,12 +1,9 @@
-* {
-    margin: auto;
-}
-
 body {
     width: 30rem;
     border: 1px solid grey;
     border-radius: 5px;
     padding: 40px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -18,30 +15,58 @@ hr {
     color: rgb(13, 13, 149);
 }
 
-input {
+#task_oruulah{
     background-color: rgba(255, 166, 0, 0.336);
-    border: none;
-    height: 40px;
-    width: 80%;
+    border: 1px solid orange;
+    border-radius: 10px 0 0 10px;
+    padding: 15px;
+    width: 75%;
 }
 
 button {
     background-color: orange;
-    height: 40px;
-    border: 2px solid orange;
+    padding: 15px;
+    border: 1px solid orange;
     color: white;
+    border-radius: 0 10px 10px 0;
 }
 
 #mur2_style {
     display: flex;
     margin: 20px 0;
+    justify-content: space-between;
 }
 
 #main {
     margin-top: 30px;
-    ыыыы
 }
 
-#jagsaaltList {
+.jagsaalt_style
+{
+    margin-top: 20px;
+    background: lightgrey;
+    border: 1px orange solid;
+    border-radius: 10px;
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 15px;
+}
+
+.fa-check
+{
+    color: green;
+    margin: 0 10px;
+}
+
+.fa-trash
+{
+    color: red;
+}
+
+#tasks
+{
+    border: none;
+    outline: none;
+    background: none;
 }

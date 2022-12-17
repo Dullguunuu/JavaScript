@@ -1,32 +1,51 @@
-let a = Math.floor(Math.random() * 20 + 1);
-let randomNum = document.querySelector(".guess");
-randomNum = a;
-console.log(randomNum)
+let random = Math.floor(Math.random() * 20 + 1);
+console.log(random)
 
+let myNum = document.querySelector("#myNumber");
+let response = document.querySelector(".message");
+let score = document.querySelector(".score");
+let highScore = document.querySelector(".highscore");
 
-let b = document.getElementById("myNumber").value;
 
 let btn = document.querySelector(".check")
 btn.addEventListener("click", () => {
-    // let wrong;
-    // let output;
+    if (Number(myNum.value)) {
+        if (random == myNum.value) {
+            response.innerHTML = "Зөв таалаа";
+            document.body.style.backgroundColor = '#60b347';
+            btn.ariaDisabled = true;
+            myNum.readOnly = true;
 
-    if (a == b) {
-        document.querySelector(".message").innerHTML = "Зөв таалаа";
-        document.body.style.backgroundColor = '#60b347';
-    }
-    else if (a < b) {
-        document.querySelector(".message").innerHTML = "Их байна";
-        // wrong--;
-    }
-    else if (a > b) {
-        document.querySelector(".message").innerHTML = "Бага байна";
-        // wrong--;
+            highScore.innerHTML = score.innerHTML
+        }
+        else if (random < myNum.value) {
+            response.innerHTML = "Их байна";
+            score.innerHTML--;
+        }
+        else {
+            response.innerHTML = "Бага байна";
+            score.innerHTML--;
+        }
     }
     else {
-        document.querySelector(".message").innerHTML = "Тоо оруулна уу"
+        response.innerHTML = "Тоо оруулна уу"
+    }
+
+    if (score.innerHTML == 0) {
+        response.innerHTML = "Та хожигдлоо";
+        document.body.style.backgroundColor = 'red';
     }
 })
+
+let againBtn = document.querySelector(".again")
+againBtn.addEventListener("click", () => {
+    response.innerHTML = "Тааж эхлээрэй...";
+    score.innerHTML = "20";
+    document.body.style.backgroundColor = "#222";
+    myNum.readOnly = false;
+    myNum.value = "";
+})
+
 
 
 
