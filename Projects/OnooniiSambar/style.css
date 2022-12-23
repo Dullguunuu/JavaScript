@@ -38,6 +38,20 @@ button {
     margin: 10px auto;
 }
 
-.fa {
-    margin: 0 10px;
+#editBtn
+{
+    background: none;
+    border: 1px blue solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: blue;
+}
+
+#delBtn
+{
+    background: none;
+    border: 1px red solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: red;
 }
